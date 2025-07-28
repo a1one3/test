@@ -1,0 +1,63 @@
+.class public final Landroidx/compose/animation/ޚ;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\"\u001c\u0010\u0000\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u0001X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0003\u0010\u0004¨\u0006\u0005"
+    }
+    d2 = {
+        "ModifierLocalSharedElementInternalState",
+        "Landroidx/compose/ui/modifier/ProvidableModifierLocal;",
+        "Landroidx/compose/animation/SharedElementInternalState;",
+        "getModifierLocalSharedElementInternalState",
+        "()Landroidx/compose/ui/modifier/ProvidableModifierLocal;",
+        "animation"
+    }
+    k = 0x2
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field private static final Ϳ:Landroidx/compose/ui/ฝ;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    invoke-custom {}, call_site_2600("invoke", ()Lkotlin/jvm/functions/Function0;, ()Ljava/lang/Object;, invoke-static@Landroidx/compose/animation/ޚ;->Ԩ()Landroidx/compose/animation/ޜ;, ()Landroidx/compose/animation/ޜ;)@Ljava/lang/invoke/LambdaMetafactory;->metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroidx/compose/ui/ʉ;->Ϳ(Lkotlin/jvm/functions/Function0;)Landroidx/compose/ui/ฝ;
+
+    move-result-object v0
+
+    sput-object v0, Landroidx/compose/animation/ޚ;->Ϳ:Landroidx/compose/ui/ฝ;
+
+    return-void
+.end method
+
+.method public static final Ϳ()Landroidx/compose/ui/ฝ;
+    .registers 1
+
+    sget-object v0, Landroidx/compose/animation/ޚ;->Ϳ:Landroidx/compose/ui/ฝ;
+
+    return-object v0
+.end method
+
+.method private static final Ԩ()Landroidx/compose/animation/ޜ;
+    .registers 1
+
+    const/4 v0, 0x0
+
+    return-object v0
+.end method

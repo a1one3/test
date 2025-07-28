@@ -1,0 +1,28 @@
+.class public Lcom/sun/jna/MethodResultContext;
+.super Lcom/sun/jna/FunctionResultContext;
+
+
+# instance fields
+.field private final method:Ljava/lang/reflect/Method;
+
+
+# direct methods
+.method constructor <init>(Ljava/lang/Class;Lcom/sun/jna/Function;[Ljava/lang/Object;Ljava/lang/reflect/Method;)V
+    .registers 5
+
+    invoke-direct {p0, p1, p2, p3}, Lcom/sun/jna/FunctionResultContext;-><init>(Ljava/lang/Class;Lcom/sun/jna/Function;[Ljava/lang/Object;)V
+
+    iput-object p4, p0, Lcom/sun/jna/MethodResultContext;->method:Ljava/lang/reflect/Method;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getMethod()Ljava/lang/reflect/Method;
+    .registers 2
+
+    iget-object v0, p0, Lcom/sun/jna/MethodResultContext;->method:Ljava/lang/reflect/Method;
+
+    return-object v0
+.end method

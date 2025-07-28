@@ -1,0 +1,73 @@
+.class Lcom/jetbrains/JBR$FontMetricsAccessor__Holder;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/jetbrains/JBR;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "FontMetricsAccessor__Holder"
+.end annotation
+
+
+# static fields
+.field private static final FALLBACK:Lcom/jetbrains/JBR$FallbackSupplier;
+
+.field private static final INSTANCE:Lcom/jetbrains/FontMetricsAccessor;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 3
+
+    invoke-custom {}, call_site_471("get", ()Lcom/jetbrains/JBR$FallbackSupplier;, ()Ljava/lang/Object;, invoke-constructor@Lcom/jetbrains/FontMetricsAccessor_Fallback;-><init>()V, ()Lcom/jetbrains/FontMetricsAccessor;)@Ljava/lang/invoke/LambdaMetafactory;->metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/jetbrains/JBR$FontMetricsAccessor__Holder;->FALLBACK:Lcom/jetbrains/JBR$FallbackSupplier;
+
+    const-class v0, Lcom/jetbrains/FontMetricsAccessor;
+
+    sget-object v1, Lcom/jetbrains/JBR$FontMetricsAccessor__Holder;->FALLBACK:Lcom/jetbrains/JBR$FallbackSupplier;
+
+    const/4 v2, 0x0
+
+    new-array v2, v2, [Lcom/jetbrains/Extensions;
+
+    invoke-static {v0, v1, v2}, Lcom/jetbrains/JBR;->access$200(Ljava/lang/Class;Lcom/jetbrains/JBR$FallbackSupplier;[Lcom/jetbrains/Extensions;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/jetbrains/FontMetricsAccessor;
+
+    sput-object v0, Lcom/jetbrains/JBR$FontMetricsAccessor__Holder;->INSTANCE:Lcom/jetbrains/FontMetricsAccessor;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method static synthetic access$1000()Lcom/jetbrains/JBR$FallbackSupplier;
+    .registers 1
+
+    sget-object v0, Lcom/jetbrains/JBR$FontMetricsAccessor__Holder;->FALLBACK:Lcom/jetbrains/JBR$FallbackSupplier;
+
+    return-object v0
+.end method
+
+.method static synthetic access$900()Lcom/jetbrains/FontMetricsAccessor;
+    .registers 1
+
+    sget-object v0, Lcom/jetbrains/JBR$FontMetricsAccessor__Holder;->INSTANCE:Lcom/jetbrains/FontMetricsAccessor;
+
+    return-object v0
+.end method

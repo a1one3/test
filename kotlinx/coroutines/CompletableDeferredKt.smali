@@ -1,0 +1,109 @@
+.class public final Lkotlinx/coroutines/CompletableDeferredKt;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a)\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00020\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0005¢\u0006\u0002\u0010\u0006\u001a\u001e\u0010\u0007\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0003\"\u0004\b\u0000\u0010\u00022\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\t\u001a\u001f\u0010\u0007\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0003\"\u0004\b\u0000\u0010\u00022\u0006\u0010\n\u001a\u0002H\u0002¢\u0006\u0002\u0010\u000b¨\u0006\f"
+    }
+    d2 = {
+        "completeWith",
+        "",
+        "T",
+        "Lkotlinx/coroutines/CompletableDeferred;",
+        "result",
+        "Lkotlin/Result;",
+        "(Lkotlinx/coroutines/CompletableDeferred;Ljava/lang/Object;)Z",
+        "CompletableDeferred",
+        "parent",
+        "Lkotlinx/coroutines/Job;",
+        "value",
+        "(Ljava/lang/Object;)Lkotlinx/coroutines/CompletableDeferred;",
+        "kotlinx-coroutines-core"
+    }
+    k = 0x2
+    mv = {
+        0x2,
+        0x1,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nCompletableDeferred.kt\nKotlin\n*S Kotlin\n*F\n+ 1 CompletableDeferred.kt\nkotlinx/coroutines/CompletableDeferredKt\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,91:1\n1#2:92\n*E\n"
+    }
+.end annotation
+
+
+# direct methods
+.method public static final CompletableDeferred(Ljava/lang/Object;)Lkotlinx/coroutines/CompletableDeferred;
+    .registers 3
+
+    new-instance v0, Lkotlinx/coroutines/CompletableDeferredImpl;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lkotlinx/coroutines/CompletableDeferredImpl;-><init>(Lkotlinx/coroutines/Job;)V
+
+    invoke-virtual {v0, p0}, Lkotlinx/coroutines/CompletableDeferredImpl;->complete(Ljava/lang/Object;)Z
+
+    check-cast v0, Lkotlinx/coroutines/CompletableDeferred;
+
+    return-object v0
+.end method
+
+.method public static final CompletableDeferred(Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/CompletableDeferred;
+    .registers 2
+
+    new-instance v0, Lkotlinx/coroutines/CompletableDeferredImpl;
+
+    invoke-direct {v0, p0}, Lkotlinx/coroutines/CompletableDeferredImpl;-><init>(Lkotlinx/coroutines/Job;)V
+
+    check-cast v0, Lkotlinx/coroutines/CompletableDeferred;
+
+    return-object v0
+.end method
+
+.method public static synthetic CompletableDeferred$default(Lkotlinx/coroutines/Job;ILjava/lang/Object;)Lkotlinx/coroutines/CompletableDeferred;
+    .registers 4
+
+    and-int/lit8 v0, p1, 0x1
+
+    if-eqz v0, :cond_5
+
+    const/4 p0, 0x0
+
+    :cond_5
+    invoke-static {p0}, Lkotlinx/coroutines/CompletableDeferredKt;->CompletableDeferred(Lkotlinx/coroutines/Job;)Lkotlinx/coroutines/CompletableDeferred;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static final completeWith(Lkotlinx/coroutines/CompletableDeferred;Ljava/lang/Object;)Z
+    .registers 3
+
+    invoke-static {p1}, Lkotlin/Result;->exceptionOrNull-impl(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object v0
+
+    if-nez v0, :cond_b
+
+    invoke-interface {p0, p1}, Lkotlinx/coroutines/CompletableDeferred;->complete(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    :goto_a
+    return v0
+
+    :cond_b
+    invoke-interface {p0, v0}, Lkotlinx/coroutines/CompletableDeferred;->completeExceptionally(Ljava/lang/Throwable;)Z
+
+    move-result v0
+
+    goto :goto_a
+.end method

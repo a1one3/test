@@ -1,0 +1,484 @@
+.class public final Landroidx/compose/ui/window/ࡣ$Ϳ;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/ui/window/ࡣ;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Ϳ"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\u001a\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00010\u00052\u0006\u0010\u0007\u001a\u00020\b¨\u0006\t"
+    }
+    d2 = {
+        "Landroidx/compose/ui/window/WindowStateImpl$Companion;",
+        "",
+        "<init>",
+        "()V",
+        "Saver",
+        "Landroidx/compose/runtime/saveable/Saver;",
+        "Landroidx/compose/ui/window/WindowState;",
+        "unspecifiedPosition",
+        "Landroidx/compose/ui/window/WindowPosition;",
+        "ui"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation build Lkotlin/jvm/internal/SourceDebugExtension;
+    value = {
+        "SMAP\nWindowState.desktop.kt\nKotlin\n*S Kotlin\n*F\n+ 1 WindowState.desktop.kt\nandroidx/compose/ui/window/WindowStateImpl$Companion\n+ 2 Dp.kt\nandroidx/compose/ui/unit/DpKt\n*L\n1#1,255:1\n374#2:256\n363#2:257\n374#2:258\n363#2:259\n363#2:260\n123#2:261\n123#2:262\n*S KotlinDebug\n*F\n+ 1 WindowState.desktop.kt\nandroidx/compose/ui/window/WindowStateImpl$Companion\n*L\n232#1:256\n232#1:257\n233#1:258\n233#1:259\n234#1:260\n242#1:261\n247#1:262\n*E\n"
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(B)V
+    .registers 2
+
+    invoke-direct {p0}, Landroidx/compose/ui/window/ࡣ$Ϳ;-><init>()V
+
+    return-void
+.end method
+
+.method public static Ϳ(Landroidx/compose/ui/window/ࡠ;)Landroidx/compose/runtime/saveable/Saver;
+    .registers 3
+
+    const-string v0, ""
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-custom {}, call_site_2727("invoke", ()Lkotlin/jvm/functions/Function2;, (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, invoke-static@Landroidx/compose/ui/window/ࡣ$Ϳ;->Ϳ(Landroidx/compose/runtime/saveable/SaverScope;Landroidx/compose/ui/window/WindowState;)Ljava/util/List;, (Landroidx/compose/runtime/saveable/SaverScope;Landroidx/compose/ui/window/WindowState;)Ljava/util/List;)@Ljava/lang/invoke/LambdaMetafactory;->metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+
+    move-result-object v0
+
+    invoke-custom {p0}, call_site_4147("invoke", (Landroidx/compose/ui/window/ࡠ;)Lkotlin/jvm/functions/Function1;, (Ljava/lang/Object;)Ljava/lang/Object;, invoke-static@Landroidx/compose/ui/window/ࡣ$Ϳ;->Ϳ(Landroidx/compose/ui/window/ࡠ;Ljava/util/List;)Landroidx/compose/ui/window/WindowState;, (Ljava/util/List;)Landroidx/compose/ui/window/WindowState;)@Ljava/lang/invoke/LambdaMetafactory;->metafactory(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroidx/compose/runtime/saveable/ListSaverKt;->listSaver(Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;)Landroidx/compose/runtime/saveable/Saver;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private static final Ϳ(Landroidx/compose/ui/window/ࡠ;Ljava/util/List;)Landroidx/compose/ui/window/WindowState;
+    .registers 9
+
+    const/4 v6, 0x0
+
+    const-string v0, ""
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Landroidx/compose/ui/window/ࡣ;
+
+    invoke-static {}, Landroidx/compose/ui/window/߿;->Ϳ()Lkotlin/enums/EnumEntries;
+
+    move-result-object v2
+
+    invoke-interface {p1, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v1, Ljava/lang/Integer;
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    invoke-interface {v2, v1}, Lkotlin/enums/EnumEntries;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroidx/compose/ui/window/߿;
+
+    const/4 v2, 0x1
+
+    invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v2, Ljava/lang/Boolean;
+
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v2
+
+    const/4 v3, 0x2
+
+    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v3, Ljava/lang/Boolean;
+
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_a2
+
+    const/4 v3, 0x3
+
+    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v3, Ljava/lang/Float;
+
+    invoke-virtual {v3}, Ljava/lang/Float;->floatValue()F
+
+    move-result v3
+
+    invoke-static {v3}, Landroidx/compose/ui/unit/Ԭ;->ԩ(F)F
+
+    move-result v4
+
+    const/4 v3, 0x4
+
+    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v3, Ljava/lang/Float;
+
+    invoke-virtual {v3}, Ljava/lang/Float;->floatValue()F
+
+    move-result v3
+
+    invoke-static {v3}, Landroidx/compose/ui/unit/Ԭ;->ԩ(F)F
+
+    move-result v3
+
+    invoke-static {v4, v3}, Landroidx/compose/ui/window/ࡡ;->Ϳ(FF)Landroidx/compose/ui/window/ࡠ$Ϳ;
+
+    move-result-object v3
+
+    check-cast v3, Landroidx/compose/ui/window/ࡠ;
+
+    :goto_67
+    const/4 v4, 0x7
+
+    invoke-static {p1, v4}, Lkotlin/collections/CollectionsKt;->getOrNull(Ljava/util/List;I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    sget-object v5, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    invoke-static {v4, v5}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_a4
+
+    const/4 v4, 0x5
+
+    invoke-interface {p1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v4, Ljava/lang/Float;
+
+    invoke-virtual {v4}, Ljava/lang/Float;->floatValue()F
+
+    move-result v4
+
+    invoke-static {v4}, Landroidx/compose/ui/unit/Ԭ;->ԩ(F)F
+
+    move-result v5
+
+    const/4 v4, 0x6
+
+    invoke-interface {p1, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+
+    check-cast v4, Ljava/lang/Float;
+
+    invoke-virtual {v4}, Ljava/lang/Float;->floatValue()F
+
+    move-result v4
+
+    invoke-static {v4}, Landroidx/compose/ui/unit/Ԭ;->ԩ(F)F
+
+    move-result v4
+
+    invoke-static {v5, v4}, Landroidx/compose/ui/unit/ԭ;->Ԩ(FF)J
+
+    move-result-wide v4
+
+    :goto_9c
+    invoke-direct/range {v0 .. v6}, Landroidx/compose/ui/window/ࡣ;-><init>(Landroidx/compose/ui/window/߿;ZLandroidx/compose/ui/window/ࡠ;JB)V
+
+    check-cast v0, Landroidx/compose/ui/window/WindowState;
+
+    return-object v0
+
+    :cond_a2
+    move-object v3, p0
+
+    goto :goto_67
+
+    :cond_a4
+    sget-object v4, Landroidx/compose/ui/unit/ԯ;->Ϳ:Landroidx/compose/ui/unit/ԯ$Ϳ;
+
+    invoke-static {}, Landroidx/compose/ui/unit/ԯ;->ԩ()J
+
+    move-result-wide v4
+
+    goto :goto_9c
+.end method
+
+.method private static final Ϳ(Landroidx/compose/runtime/saveable/SaverScope;Landroidx/compose/ui/window/WindowState;)Ljava/util/List;
+    .registers 14
+
+    const/4 v6, 0x5
+
+    const-wide/16 v2, 0x0
+
+    const-wide v10, 0x7fc000007fc00000L  # 2.247117487993712E307
+
+    const/4 v7, 0x1
+
+    const/4 v8, 0x0
+
+    const-string v0, ""
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, ""
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/16 v0, 0x8
+
+    new-array v5, v0, [Ljava/lang/Object;
+
+    invoke-interface {p1}, Landroidx/compose/ui/window/WindowState;->Ϳ()Landroidx/compose/ui/window/߿;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroidx/compose/ui/window/߿;->ordinal()I
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    aput-object v0, v5, v8
+
+    invoke-interface {p1}, Landroidx/compose/ui/window/WindowState;->Ԩ()Z
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    aput-object v0, v5, v7
+
+    const/4 v0, 0x2
+
+    invoke-interface {p1}, Landroidx/compose/ui/window/WindowState;->ԩ()Landroidx/compose/ui/window/ࡠ;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/ui/window/ࡠ;->ԩ()Z
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v1
+
+    aput-object v1, v5, v0
+
+    const/4 v0, 0x3
+
+    invoke-interface {p1}, Landroidx/compose/ui/window/WindowState;->ԩ()Landroidx/compose/ui/window/ࡠ;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/ui/window/ࡠ;->Ϳ()F
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    aput-object v1, v5, v0
+
+    const/4 v0, 0x4
+
+    invoke-interface {p1}, Landroidx/compose/ui/window/WindowState;->ԩ()Landroidx/compose/ui/window/ࡠ;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroidx/compose/ui/window/ࡠ;->Ԩ()F
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
+
+    aput-object v1, v5, v0
+
+    invoke-interface {p1}, Landroidx/compose/ui/window/WindowState;->Ԫ()J
+
+    move-result-wide v0
+
+    cmp-long v4, v0, v10
+
+    if-eqz v4, :cond_a0
+
+    move v4, v7
+
+    :goto_66
+    if-eqz v4, :cond_a2
+
+    move-object v4, v5
+
+    :goto_69
+    invoke-static {v0, v1}, Landroidx/compose/ui/unit/ԯ;->Ϳ(J)F
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    aput-object v0, v4, v6
+
+    const/4 v4, 0x6
+
+    invoke-interface {p1}, Landroidx/compose/ui/window/WindowState;->Ԫ()J
+
+    move-result-wide v0
+
+    cmp-long v6, v0, v10
+
+    if-eqz v6, :cond_aa
+
+    move v6, v7
+
+    :goto_7d
+    if-eqz v6, :cond_ac
+
+    move-wide v2, v0
+
+    move-object v6, v5
+
+    :goto_81
+    invoke-static {v2, v3}, Landroidx/compose/ui/unit/ԯ;->Ԩ(J)F
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    aput-object v0, v6, v4
+
+    const/4 v1, 0x7
+
+    invoke-interface {p1}, Landroidx/compose/ui/window/WindowState;->Ԫ()J
+
+    move-result-wide v2
+
+    cmp-long v0, v2, v10
+
+    if-eqz v0, :cond_b5
+
+    move v0, v7
+
+    :goto_95
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    aput-object v0, v5, v1
+
+    invoke-static {v5}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_a0
+    move v4, v8
+
+    goto :goto_66
+
+    :cond_a2
+    sget-object v0, Landroidx/compose/ui/unit/ԯ;->Ϳ:Landroidx/compose/ui/unit/ԯ$Ϳ;
+
+    invoke-static {}, Landroidx/compose/ui/unit/ԯ;->Ԩ()J
+
+    move-wide v0, v2
+
+    move-object v4, v5
+
+    goto :goto_69
+
+    :cond_aa
+    move v6, v8
+
+    goto :goto_7d
+
+    :cond_ac
+    sget-object v0, Landroidx/compose/ui/unit/ԯ;->Ϳ:Landroidx/compose/ui/unit/ԯ$Ϳ;
+
+    invoke-static {}, Landroidx/compose/ui/unit/ԯ;->Ԩ()J
+
+    const/4 v0, 0x6
+
+    move v4, v0
+
+    move-object v6, v5
+
+    goto :goto_81
+
+    :cond_b5
+    move v0, v8
+
+    goto :goto_95
+.end method

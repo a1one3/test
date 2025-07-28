@@ -1,0 +1,270 @@
+.class final Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "Lkotlinx/coroutines/CoroutineScope;"
+    }
+    k = 0x3
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "com.xuncorp.voxzen.service.PlaybackService$onPlayerSet$1$onLoaded$1"
+    f = "PlaybackService.kt"
+    i = {
+        0x0,
+        0x0
+    }
+    l = {
+        0x136
+    }
+    m = "invokeSuspend"
+    n = {
+        "$this$launch",
+        "updates"
+    }
+    s = {
+        "L$0",
+        "L$1"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $mediaItem:Lcom/xuncorp/pisces/PiscesMediaItem;
+
+.field private synthetic L$0:Ljava/lang/Object;
+
+.field L$1:Ljava/lang/Object;
+
+.field label:I
+
+.field final synthetic this$0:Lcom/xuncorp/voxzen/service/PlaybackService;
+
+
+# direct methods
+.method constructor <init>(Lcom/xuncorp/voxzen/service/PlaybackService;Lcom/xuncorp/pisces/PiscesMediaItem;Lkotlin/coroutines/Continuation;)V
+    .registers 5
+
+    iput-object p1, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->this$0:Lcom/xuncorp/voxzen/service/PlaybackService;
+
+    iput-object p2, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->$mediaItem:Lcom/xuncorp/pisces/PiscesMediaItem;
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0, p3}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .registers 6
+
+    new-instance v0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;
+
+    iget-object v1, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->this$0:Lcom/xuncorp/voxzen/service/PlaybackService;
+
+    iget-object v2, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->$mediaItem:Lcom/xuncorp/pisces/PiscesMediaItem;
+
+    invoke-direct {v0, v1, v2, p2}, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;-><init>(Lcom/xuncorp/voxzen/service/PlaybackService;Lcom/xuncorp/pisces/PiscesMediaItem;Lkotlin/coroutines/Continuation;)V
+
+    iput-object p1, v0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->L$0:Ljava/lang/Object;
+
+    check-cast v0, Lkotlin/coroutines/Continuation;
+
+    return-object v0
+.end method
+
+.method public final bridge synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 4
+
+    check-cast p1, Lkotlinx/coroutines/CoroutineScope;
+
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1, p2}, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final invoke(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .registers 5
+
+    invoke-virtual {p0, p1, p2}, Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;
+
+    sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    invoke-virtual {v0, v1}, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 12
+
+    const/4 v4, 0x3
+
+    const/4 v9, 0x1
+
+    const/4 v1, 0x0
+
+    iget-object v0, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->L$0:Ljava/lang/Object;
+
+    check-cast v0, Lkotlinx/coroutines/CoroutineScope;
+
+    invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
+
+    move-result-object v6
+
+    iget v2, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->label:I
+
+    packed-switch v2, :pswitch_data_7c
+
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const-string v1, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :pswitch_18  #0x0
+    invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    const/4 v2, 0x2
+
+    new-array v7, v2, [Lkotlinx/coroutines/Deferred;
+
+    const/4 v8, 0x0
+
+    new-instance v3, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1$updates$1;
+
+    iget-object v2, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->this$0:Lcom/xuncorp/voxzen/service/PlaybackService;
+
+    iget-object v5, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->$mediaItem:Lcom/xuncorp/pisces/PiscesMediaItem;
+
+    invoke-direct {v3, v2, v5, v1}, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1$updates$1;-><init>(Lcom/xuncorp/voxzen/service/PlaybackService;Lcom/xuncorp/pisces/PiscesMediaItem;Lkotlin/coroutines/Continuation;)V
+
+    check-cast v3, Lkotlin/jvm/functions/Function2;
+
+    move-object v2, v1
+
+    move-object v5, v1
+
+    invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->async$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Deferred;
+
+    move-result-object v2
+
+    aput-object v2, v7, v8
+
+    new-instance v3, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1$updates$2;
+
+    iget-object v2, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->this$0:Lcom/xuncorp/voxzen/service/PlaybackService;
+
+    iget-object v5, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->$mediaItem:Lcom/xuncorp/pisces/PiscesMediaItem;
+
+    invoke-direct {v3, v2, v5, v1}, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1$updates$2;-><init>(Lcom/xuncorp/voxzen/service/PlaybackService;Lcom/xuncorp/pisces/PiscesMediaItem;Lkotlin/coroutines/Continuation;)V
+
+    check-cast v3, Lkotlin/jvm/functions/Function2;
+
+    move-object v2, v1
+
+    move-object v5, v1
+
+    invoke-static/range {v0 .. v5}, Lkotlinx/coroutines/BuildersKt;->async$default(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;ILjava/lang/Object;)Lkotlinx/coroutines/Deferred;
+
+    move-result-object v1
+
+    aput-object v1, v7, v9
+
+    invoke-static {v7}, Lkotlin/collections/CollectionsKt;->listOf([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v2
+
+    move-object v1, v2
+
+    check-cast v1, Ljava/util/Collection;
+
+    move-object v3, p0
+
+    check-cast v3, Lkotlin/coroutines/Continuation;
+
+    invoke-static {v0}, Lkotlin/coroutines/jvm/internal/SpillingKt;->nullOutSpilledVariable(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->L$0:Ljava/lang/Object;
+
+    invoke-static {v2}, Lkotlin/coroutines/jvm/internal/SpillingKt;->nullOutSpilledVariable(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->L$1:Ljava/lang/Object;
+
+    iput v9, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->label:I
+
+    invoke-static {v1, v3}, Lkotlinx/coroutines/AwaitKt;->awaitAll(Ljava/util/Collection;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    if-ne v0, v6, :cond_6c
+
+    move-object v0, v6
+
+    :goto_64
+    return-object v0
+
+    :pswitch_65  #0x1
+    iget-object v0, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->L$1:Ljava/lang/Object;
+
+    check-cast v0, Ljava/util/List;
+
+    invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    :cond_6c
+    invoke-static {}, Ljava/lang/System;->gc()V
+
+    iget-object v0, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->this$0:Lcom/xuncorp/voxzen/service/PlaybackService;
+
+    invoke-static {v0}, Lcom/xuncorp/voxzen/service/PlaybackService;->access$getSteamRichPresenceManager$p(Lcom/xuncorp/voxzen/service/PlaybackService;)Landroidx/compose/ui/ge;
+
+    iget-object v0, p0, Lcom/xuncorp/voxzen/service/PlaybackService$onPlayerSet$1$onLoaded$1;->$mediaItem:Lcom/xuncorp/pisces/PiscesMediaItem;
+
+    invoke-static {v0}, Landroidx/compose/ui/ge;->Ϳ(Lcom/xuncorp/pisces/PiscesMediaItem;)V
+
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    goto :goto_64
+
+    :pswitch_data_7c
+    .packed-switch 0x0
+        :pswitch_18  #00000000
+        :pswitch_65  #00000001
+    .end packed-switch
+.end method

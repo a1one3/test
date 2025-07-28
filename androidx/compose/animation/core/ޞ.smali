@@ -1,0 +1,138 @@
+.class final Landroidx/compose/animation/core/ޞ;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function2;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\f\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0007\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n"
+    }
+    d2 = {
+        "<anonymous>",
+        "",
+        "it",
+        ""
+    }
+    k = 0x3
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "androidx.compose.animation.core.InfiniteTransition$run$1$1$3"
+    f = "InfiniteTransition.kt"
+    i = {}
+    l = {}
+    m = "invokeSuspend"
+    n = {}
+    s = {}
+.end annotation
+
+
+# instance fields
+.field private Ϳ:I
+
+.field private synthetic Ԩ:F
+
+
+# direct methods
+.method constructor <init>(Lkotlin/coroutines/Continuation;)V
+    .registers 3
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0, p1}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .registers 5
+
+    new-instance v0, Landroidx/compose/animation/core/ޞ;
+
+    invoke-direct {v0, p2}, Landroidx/compose/animation/core/ޞ;-><init>(Lkotlin/coroutines/Continuation;)V
+
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
+
+    move-result v1
+
+    iput v1, v0, Landroidx/compose/animation/core/ޞ;->Ԩ:F
+
+    check-cast v0, Lkotlin/coroutines/Continuation;
+
+    return-object v0
+.end method
+
+.method public final synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 5
+
+    check-cast p1, Ljava/lang/Number;
+
+    invoke-virtual {p1}, Ljava/lang/Number;->floatValue()F
+
+    move-result v0
+
+    check-cast p2, Lkotlin/coroutines/Continuation;
+
+    invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0, p2}, Lkotlin/coroutines/jvm/internal/BaseContinuationImpl;->create(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/compose/animation/core/ޞ;
+
+    sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    invoke-virtual {v0, v1}, Landroidx/compose/animation/core/ޞ;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 4
+
+    invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
+
+    iget v0, p0, Landroidx/compose/animation/core/ޞ;->Ϳ:I
+
+    invoke-static {p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    iget v0, p0, Landroidx/compose/animation/core/ޞ;->Ԩ:F
+
+    const/4 v1, 0x0
+
+    cmpl-float v0, v0, v1
+
+    if-lez v0, :cond_15
+
+    const/4 v0, 0x1
+
+    :goto_10
+    invoke-static {v0}, Lkotlin/coroutines/jvm/internal/Boxing;->boxBoolean(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_15
+    const/4 v0, 0x0
+
+    goto :goto_10
+.end method

@@ -1,0 +1,45 @@
+.class public final Lkotlin/reflect/jvm/internal/impl/storage/EmptySimpleLock;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lkotlin/reflect/jvm/internal/impl/storage/SimpleLock;
+
+
+# static fields
+.field public static final INSTANCE:Lkotlin/reflect/jvm/internal/impl/storage/EmptySimpleLock;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 1
+
+    new-instance v0, Lkotlin/reflect/jvm/internal/impl/storage/EmptySimpleLock;
+
+    invoke-direct {v0}, Lkotlin/reflect/jvm/internal/impl/storage/EmptySimpleLock;-><init>()V
+
+    sput-object v0, Lkotlin/reflect/jvm/internal/impl/storage/EmptySimpleLock;->INSTANCE:Lkotlin/reflect/jvm/internal/impl/storage/EmptySimpleLock;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final lock()V
+    .registers 1
+
+    return-void
+.end method
+
+.method public final unlock()V
+    .registers 1
+
+    return-void
+.end method

@@ -1,0 +1,62 @@
+.class public final Landroidx/compose/ui/అ$Ϳ;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroidx/compose/ui/అ;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "Ϳ"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\n\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u0013\u0010\u0004\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u0006\u0010\u0007R\u0013\u0010\t\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\n\u0010\u0007R\u0013\u0010\u000b\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\f\u0010\u0007R\u0013\u0010\r\u001a\u00020\u0005¢\u0006\n\n\u0002\u0010\b\u001a\u0004\b\u000e\u0010\u0007¨\u0006\u000f"
+    }
+    d2 = {
+        "Landroidx/compose/ui/text/style/LineBreak$Companion;",
+        "",
+        "<init>",
+        "()V",
+        "Simple",
+        "Landroidx/compose/ui/text/style/LineBreak;",
+        "getSimple-rAG3T2k",
+        "()I",
+        "I",
+        "Heading",
+        "getHeading-rAG3T2k",
+        "Paragraph",
+        "getParagraph-rAG3T2k",
+        "Unspecified",
+        "getUnspecified-rAG3T2k",
+        "ui-text"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(B)V
+    .registers 2
+
+    invoke-direct {p0}, Landroidx/compose/ui/అ$Ϳ;-><init>()V
+
+    return-void
+.end method
